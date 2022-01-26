@@ -1,0 +1,39 @@
+@import "variable.scss";
+
+.winning-number-section__title {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.winning-number-section__numbers {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .winning-number-section__number {
+    display: flex;
+    align-items: center;
+    span {
+      margin-right: 5px;
+    }
+  }
+}
+
+.result-btn,
+.restart-btn {
+  width: 100%;
+  padding: 10px 0;
+  margin-top: 35px;
+  border: 2px solid $main-color;
+  color: $main-color;
+  font-weight: bold;
+  background-color: #fff;
+  font-size: 15px;
+  transition: all 0.2s ease-in;
+  border-radius: 5px;
+  &:hover {
+    background-color: $main-color;
+    color: #000;
+  }
+}

@@ -1,0 +1,46 @@
+@import "variable.scss";
+
+.user-lotto {
+  min-height: 84px;
+  margin-bottom: 50px;
+}
+.user-lotto__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.user-lotto__title {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.toggle-btn-wrap {
+  margin-top: 3px;
+  display: flex;
+  align-items: center;
+}
+
+.user-lotto__list {
+  display: flex;
+  .icon {
+    font-size: 30px;
+    color: $main-color;
+    margin-right: 10px;
+  }
+  .user-lotto__number {
+    display: none;
+  }
+  &.show {
+    flex-direction: column;
+    .user-lotto__item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .user-lotto__number {
+      display: block;
+      font-size: 20px;
+    }
+  }
+}

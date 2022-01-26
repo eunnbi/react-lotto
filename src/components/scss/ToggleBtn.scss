@@ -1,0 +1,29 @@
+@import "variable.scss";
+
+.toggle-btn {
+  width: 35px;
+  height: 15px;
+  background-color: #9e9e9e;
+  border-radius: 10px;
+  position: relative;
+  margin-left: 10px;
+  .toggle-btn-circle {
+    position: absolute;
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    top: -3px;
+    left: 0px;
+    cursor: pointer;
+    transition: all 0.1s linear;
+  }
+  &.show {
+    background-color: $light-sub-color;
+    .toggle-btn-circle {
+      background-color: $main-color;
+      transform: translateX(70%);
+    }
+  }
+}

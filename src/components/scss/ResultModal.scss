@@ -1,0 +1,96 @@
+@import "variable.scss";
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  .modal__main {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 500px;
+    position: relative;
+    padding: 2rem;
+    .close-btn {
+      position: absolute;
+      top: 13px;
+      right: 13px;
+      color: #d70200;
+      font-size: 30px;
+      width: 30px;
+      height: 30px;
+      transition: all 0.3s ease-in-out;
+      background-color: transparent;
+      &:hover {
+        transform: rotateZ(90deg);
+      }
+    }
+  }
+}
+
+.result-table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  th {
+    padding-bottom: 10px;
+  }
+  td {
+    text-align: center;
+    padding: 10px 5px;
+  }
+  tr {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  }
+  .modal__title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .result-col {
+    width: 60%;
+  }
+  .numbers-col {
+    width: 40%;
+  }
+  .result {
+    font-weight: bold;
+    padding-left: 30px;
+    text-align: left;
+  }
+}
+
+.table__number {
+  padding: 0.5rem 0;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  font-size: 20px;
+  &.correct {
+    font-weight: bold;
+    background-color: $main-color;
+  }
+  &.bonus {
+    font-weight: bold;
+    background-color: $light-sub-color;
+  }
+}
+
+.result-info {
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 20px;
+  .prize {
+    margin-bottom: 5px;
+  }
+}
